@@ -1,16 +1,18 @@
-"""
 ## Hi!
+"""
 name = input('What is your name?\n')
 print('Hi, %s.' %name)
 """
-"""
+
 ## Age Calculation
+"""
 ## print("Please input your birth year")
 age = int(input("Please input your birth year: \n"))
 print('you are now', (2021- age), 'years!')
 """
-"""
+
 ## Multiplication
+"""
 ## print("Please input two numbers that you like to multiply. Write values using space")
 #  a, b = input("Please input two numbers that you like to multiply.\n(Write values using space. Example: 7 8) \n").split()
 #  Store input numbers
@@ -25,16 +27,18 @@ print('The Multiplication of {0} and {1} is {2}'.format(num1, num2, multiply))
 
 #print(int(a)*int(b))
 """
-"""
+
 # Python Program to calculate the square root
+"""
 # Input from the user
 num = float(input('Enter a number: '))
 
 num_sqrt = num ** 0.5
 print('The square root of %0.3f is %0.3f'%(num ,num_sqrt))
 """
-"""
+
 ## String manipulation
+"""
 # List of lanuguages in including in the variables a, b, c, d and e
 a = "Bengali"
 b = "English"
@@ -43,8 +47,9 @@ d = "Spanish"
 e = "French"
 print('My favorite language is: %s , %s, %s, %s, and %s' %(a, b, c, d, e))
 """
-"""
+
 ## String manipulation - case
+"""
 print("Please write a sentence")
 message = input()
 print('1. in lower:', message.lower())
@@ -54,8 +59,9 @@ print('4. in title:', message.title())
 print('5. in swapcase:', message.swapcase())
 print('6. in casefold:', message.casefold())
 """
-"""
+
 ## String manipulation - number
+"""
 number = 4196.87468465
 print(number)
 print('%.2f' % number)
@@ -63,15 +69,17 @@ print('%.4f' % number)
 print('%.1f' % number)
 print('%.5f' % number)
 """
-"""
+
 ## String manipulation
+"""
 a = input("What is your mother language? \n")
 b = input("What is your 2nd language? \n")
 # print('My favorite languages are:', a, 'and', b)
 print('My favorite languages are: %s and %s' %(a, b))  ##String formating
 """
-"""
+
 ## Play with string
+"""
 a = 'bangla'
 print(len(a))
 print(a.count('a'))
@@ -91,8 +99,9 @@ sentence = 'How can a clan cram in a clean cream can?'
 #print(sentence.strip('?')) #Return a copy of the string with the leading and trailing characters removed.
 print(sentence.split(' '))  #Actually a list.
 """
-"""
+
 # Chapter: List
+"""
 # a =['onion', 'potato', 'ginger', 'cucumber']
 # print(a)
 # print(type(a))
@@ -123,8 +132,9 @@ print(b)
 b.sort()
 print("List updated after sorting: ", b)
 """
-"""
+
 ## Chapter: Tuple
+"""
 # a = ()
 # a = ('onion', 'potato', 'ginger', 'cucumber')
 # print(type(a))
@@ -147,8 +157,9 @@ print("count total item qty of tuple b : ", len(b))
 print("count a specific item (potato) qty in tuple b : ", b.count('potato'))
 print("count a specific item (potato) qty in tuple c : ", c.count('potato'))
 """
-"""
+
 # Chapter: Set
+"""
 # a = {'orange', 'banana', 'pear', 'apple'}
 # print("print of set a: \n", a)
 # print("print of type a: \n", type(a))
@@ -176,8 +187,8 @@ C = A.union(B)  # Union of to sets
 print("print of set C: \n", C)
 """
 
-"""
 #  Chapter: Dictionary
+"""
 a = {'name': 'MD. Maksudur Rahman Khan', 'nickname': 'Maateen', 'email': 'maateen@outlook.com', 'phone': '01711223344'}
 #b = dict()
 print("print of Dictionary a: \n", a)
@@ -209,8 +220,71 @@ print("print dictionary keys: \n", a.keys(),"\n" "print dictionary values: \n", 
 """
 
 #  Chapter: Condition Logic
-a = int.(input())
+# Example (if ... else)
+"""
+a = 5
 if a < 10:
     print('a is less than 10.')
 else:
-    print('a is greater than 10.')    
+    print('a is greater than 10.')
+"""
+
+#  Example (if ... elif ... else)
+
+"""
+a = int(input('Please input a number: \n'))
+if a == 5:
+    print("a is equal to 5")
+elif a < 5:
+    print("a is less than 5")
+elif a  > 5 and a < 10:
+    print("a is inbetween 5 and 10.")
+else:
+    print("a is greater than 10")
+"""
+
+# Example- nested if
+"""
+a = int(input('Please input a number: \n'))
+if a < 10:
+     if ( a % 2) == 0:
+        print("less, yes")
+     else:
+        print("less, no")
+
+else:
+     if (a  % 3) == 0:
+        print("greater, yes")
+     else:
+         print("greater , no")
+"""
+
+# Problem-1
+"""
+number = int(input('Please input a number: \n'))
+if number %3 == 0 and  number %5 == 0:
+	print("Yes")
+else:
+	print("No")
+"""
+
+# Problem-2
+"""
+number = float(input('Please input a number: \n'))
+if number > 0:
+	print('Positive')
+elif number < 0:
+	print('Negetive')
+else:
+	print("Zero")
+"""
+
+#  Problem-3
+"""
+number = int(input('Please input a number: \n'))
+if number %2 == 0:
+	print("Even")
+else:
+	print("Odd")
+
+"""
