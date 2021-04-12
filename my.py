@@ -288,3 +288,47 @@ else:
 	print("Odd")
 
 """
+
+# Problem-4
+"""
+print("Please, input a character: ")
+character = input()
+
+if character >= 'a' and character <= 'z' :  # Used the logic of ASCII values, a-z ASCII value 97-122
+	print('Lower Case')
+elif character >= 'A' and character <= 'Z' :  #  A-Z ASCII is 65-90
+	print('Upper Case')
+else:
+	print('Others')
+"""
+
+# Problem-5
+
+"""
+print("Please, input a character: ")
+character = input()
+
+if character >= 'a' and character <= 'z' or character >= 'A' and character <= 'Z' :
+	if character in 'aeiouAEIOU' :  # Checking if the inputtted character in a e i o u
+		print('Vowel')
+	else:
+		print('Consonent')
+else:
+	print('Nothing')
+"""
+
+# Problem-6
+
+a = int(input('Please input your lunch bill:  \n'))
+
+b = a   # keeping the amount in valiable b
+
+temp = a // 1000  # Counting number of 1,000 Tk. notes  and floor division was used to skip the decimal output.
+print('1,000 Tk. notes:', temp)
+if  temp > 0:  # If 1000  note was used
+	a = a%1000  # calculate the balance amount after using 1000 Tk. note
+	b = a  # Keeping the amount t in b variable
+else:
+	a = b  # No 1000 Tk. note was used, keeping amount in b variable
+temp = a//500  # counting number of f 500 Tk. notes
+print('500 Tk. notes:', temp)
