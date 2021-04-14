@@ -392,19 +392,16 @@ print("1 Tk. notes:", temp)
 """
 
 #  https://www.hackerrank.com/challenges/py-if-else/problem
+
 """
-#!/bin/python
-
-import math
-import os
-import random
-import re
-import sys
-
-
+# import math
+# import os
+# import random
+# import re
+# import sys
 
 if __name__ == '__main__':
-    n = int(raw_input().strip())
+    n = int(input().strip())
 if n % 2 > 0:
     print("Weird")
 elif n > 1 and n < 6:
@@ -413,11 +410,10 @@ elif n > 5 and n < 21:
     print("Weird")
 elif n > 20:
     print("Not Weird")
-else:
-    print("")
-"""    
+"""
 
 #  https://www.hackerrank.com/challenges/python-division/problem
+
 """
 from __future__ import division
 
@@ -427,4 +423,97 @@ if __name__ == '__main__':
 
 print(int(a//b))
 print(float(a/b))
+"""
+
+#  Chapter: Loop
+
+"""
+n = 1
+while n <= 1000:
+	print(n)
+	n = n+1
+"""
+
+"""
+n = 1
+temp = 0
+while n <= 100:
+	temp = temp + n
+	n = n + 1
+print(temp)
+"""
+"""
+n = 100
+temp = n*(n+1)
+temp = temp/2
+print(temp)
+"""
+
+"""
+n = 1
+temp = 0
+while n <= 97:
+        temp = temp + n
+        n = n + 2
+print(temp, "$$")
+"""
+
+"""
+a = ['onion', 'potato', 'ginger', 'cucumber']
+print(type(a))
+for item in a:
+	print(item)
+"""
+
+"""
+a = 'Python'
+for letter in a:
+	print(letter)
+"""
+
+"""
+# print(list(range(5, 21, 2)))
+for number in range(1, 11):
+	print(number)
+"""
+
+# Loop Control Statement
+
+"""
+for number in range(1, 11):
+	if number == 5:
+		break
+	print(number)
+"""
+
+"""
+for number in range(1, 11):
+	if number == 5:
+		continue
+	print(number)
+"""
+
+"""
+for number in range(1, 11):
+	if number == 5:
+		pass
+	print(number)
+"""
+
+"""
+print('Starting loop')
+n = 1
+while n <= 10:
+	print(n)
+	n = n + 1
+else:
+	print('Loop is over')
+"""
+
+"""
+for n in range(0, 11):
+	print(n)
+	n = n + 1
+else:
+	print('The loop is over.')
 """
