@@ -259,7 +259,7 @@ else:
          print("greater , no")
 """
 
-# Problem-1
+# Problem-1 (Div by 3  and 5)
 """
 number = int(input('Please input a number: \n'))
 if number %3 == 0 and  number %5 == 0:
@@ -268,7 +268,7 @@ else:
 	print("No")
 """
 
-# Problem-2
+# Problem-2 (Positive or Negetive)
 """
 number = float(input('Please input a number: \n'))
 if number > 0:
@@ -279,7 +279,7 @@ else:
 	print("Zero")
 """
 
-#  Problem-3
+#  Problem-3 (Odd or Even)
 """
 number = int(input('Please input a number: \n'))
 if number %2 == 0:
@@ -289,7 +289,7 @@ else:
 
 """
 
-# Problem-4
+# Problem-4 (Upper of Lower Case)
 """
 print("Please, input a character: ")
 character = input()
@@ -302,7 +302,7 @@ else:
 	print('Others')
 """
 
-# Problem-5
+# Problem-5 (Vowel Checking)
 
 """
 print("Please, input a character: ")
@@ -317,18 +317,114 @@ else:
 	print('Nothing')
 """
 
-# Problem-6
-
+# Problem-6 (Taka Notes counting)
+"""
 a = int(input('Please input your lunch bill:  \n'))
 
 b = a   # keeping the amount in valiable b
 
 temp = a // 1000  # Counting number of 1,000 Tk. notes  and floor division was used to skip the decimal output.
 print('1,000 Tk. notes:', temp)
-if  temp > 0:  # If 1000  note was used
+if  temp > 0:
 	a = a%1000  # calculate the balance amount after using 1000 Tk. note
-	b = a  # Keeping the amount t in b variable
+	b = a  # Keeping the balance  amount t in b variable
 else:
 	a = b  # No 1000 Tk. note was used, keeping amount in b variable
+
 temp = a//500  # counting number of f 500 Tk. notes
 print('500 Tk. notes:', temp)
+if temp > 0 :
+	a = a%500  # calculate the balance amount after using 500 Tk. note
+	b = a  # Keeping the balance  amount t in b variable
+else:
+	a = b
+
+temp = a//100  # Counting number of 100 notes used
+print("100 Tk. notes:", temp)
+if temp > 0:
+	a = a%100  # calculate the balance amount after using 100 Tk. note
+	b = a  # Keeping the balance  amount t in b variable
+else:
+	a = b
+
+temp = a//50  # Counting number of 50 notes used
+print("50 Tk. notes:", temp)
+if temp > 0:
+	a = a%50  # calculate the balance amount after using  50 Tk. note
+	b = a  #Keeping the balance  amount t in b variable
+else:
+	a = b
+
+temp = a//20  # Counting number of 20 notes used
+print("20 Tk. notes:", temp)
+if temp > 0:
+        a = a%20  # calculate the balance amount after using  20 Tk. note
+        b = a  #Keeping the balance  amount t in b variable
+else:
+        a = b
+
+temp = a//10  # Counting number of 10 notes used
+print("10 Tk. notes:", temp)
+if temp > 0:
+        a = a%10  # calculate the balance amount after using  10 Tk. note
+        b = a  #Keeping the balance  amount t in b variable
+else:
+        a = b
+
+temp = a//5  # Counting number of 5 notes used
+print("5 Tk. notes:", temp)
+if temp > 0:
+        a = a%5  # calculate the balance amount after using  5 Tk. note
+        b = a  #Keeping the balance  amount t in b variable
+else:
+        a = b
+
+temp = a//2  # Counting number of 2 notes used
+print("2 Tk. notes:", temp)
+if temp > 0:
+        a = a%2  # calculate the balance amount after using  2 Tk. note
+        b = a  #Keeping the balance  amount t in b variable
+else:
+        a = b
+
+temp = a//1  # Counting number of 1 notes used
+print("1 Tk. notes:", temp)
+"""
+
+#  https://www.hackerrank.com/challenges/py-if-else/problem
+"""
+#!/bin/python
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+if __name__ == '__main__':
+    n = int(raw_input().strip())
+if n % 2 > 0:
+    print("Weird")
+elif n > 1 and n < 6:
+    print("Not Weird")
+elif n > 5 and n < 21:
+    print("Weird")
+elif n > 20:
+    print("Not Weird")
+else:
+    print("")
+"""    
+
+#  https://www.hackerrank.com/challenges/python-division/problem
+"""
+from __future__ import division
+
+if __name__ == '__main__':
+    a = int(raw_input())
+    b = int(raw_input())
+
+print(int(a//b))
+print(float(a/b))
+"""
