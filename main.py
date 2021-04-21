@@ -526,6 +526,7 @@ else:
 	print('The loop is over.')
 """
 
+#  Problem-1
 """
 print("Please, input the number: ")
 number  = int(input())
@@ -536,6 +537,7 @@ while count <= 10:
 
 """
 
+#  Problem-2
 """
 my_list = []
 
@@ -545,6 +547,7 @@ for i in range(1, 101):
 print(my_list)
 """
 
+#  Problem-3
 """
 a = [13, 34, 19, 28, 46, 61, 73, 49, 1, 31, 4, 7, 91, 58, 52, 82, 70, 43, 88, 55, 97, 16, 22, 25, 79, 85, 40, 64, 94, 67, 37]
 my_list = []
@@ -556,6 +559,7 @@ for i in a:
 print(my_list)
 """
 
+#  Problem-4
 """
 a = [40, 45, 33, 34, 8, 38, 28, 22, 1, 7, 49, 41, 14, 5, 22, 39, 15, 19, 36, 37, 43, 2, 5, 42, 46, 48, 49, 12, 48, 37, 8, 20, 30, 20, 4, 37, 27, 29, 7, 44, 15, 32, 35, 10, 28, 18, 2, 15, 36, 38]
 my_list = []
@@ -567,6 +571,7 @@ for i in a:
 print(my_list)
 """
 
+#  Problem-5
 """
 print('Please, input the number:')
 number = int(input())
@@ -580,6 +585,8 @@ while number > 0:
 	print()
 	number -= 1
 """
+
+#  Problem-6
 """
 print('Please input your word')
 word = input()
@@ -592,6 +599,8 @@ else:
 	print('LOL! It is not a pallindrome.')
 """
 
+#  Problem-7 (Binary search mode)
+"""
 my_list = [1, 3, 5, 7, 11, 13, 15, 17, 20, 26, 31, 44, 54, 56, 65, 77, 94, 100]
 print('Input the number:')
 number = int(input())
@@ -613,3 +622,104 @@ while first <= last and not found:
 	cycle += 1
 
 print('Found after', cycle, 'cycle.')
+"""
+
+#  https://www.programiz.com/python-programming/examples/random-number
+"""
+# Program to generate a random number between 0 and 9
+
+# importing the random module
+
+import random
+
+print(random.randint(0,9))
+"""
+
+#  https://www.programiz.com/python-programming/examples/km-mile
+"""
+#  Taking kilometers input from the user
+kilometers = float(input("Enter value in kilometers:  "))
+
+#  convert factor
+conv_fac = 0.621371
+
+#  calculate miles
+miles = kilometers * conv_fac
+print('%0.2f kilometeres is equa to %0.2f miles' %(kilometers, miles))
+"""
+
+#  https://www.programiz.com/python-programming/examples/celsius-fahrenheit
+
+"""
+# Python Program to convert temperature in celsius to fahrenheit
+
+# change this value for a different result
+celsius = float(input('Please write a celsius value:  '))
+# calculate fahrenheit
+ fahrenheit = (celsius * 1.8) + 32
+print('%0.1f degree Celcius is equal to %0.1f degree Fahrenheit ' %(celsius, fahrenheit))
+"""
+"""
+# Python Program to convert temperature in fahrenheit to celsius
+
+# change this value for a different result
+fahrenheit = float(input('Please write a farheneit value:  '))
+# fahrenheit to celcius
+celsius = (fahrenheit - 32) / 1.8
+print('%0.1f degree Farheneit is equal to %0.1f degree Celsius '   %(fahrenheit, celsius))
+"""
+
+#  https://www.programiz.com/python-programming/examples/print-without-newline
+"""
+#  print each statement on a new line
+print("Python")
+print("is easy to learn")
+
+# new line
+print()
+
+#  print both the statementt on a single line
+print("Python", end= " ")  # concatenates the content of the next print statement
+print("is easy to learn.")
+"""
+
+#  https://www.programiz.com/python-programming/examples/positive-negative-zero
+
+"""
+num = float(input('Enter a number: '))
+if num > 0:
+	print("Positive number")
+elif num == 0:
+	print("Zero")
+else :
+	print ("Negative number")
+
+"""
+"""
+num = float(input("Enter a number: "))
+if num >= 0:
+	if num == 0:
+		print("Zero")
+	else:
+		print("Positive number")
+else:
+	print("Negetive number")
+"""
+
+#  https://www.programiz.com/python-programming/examples/leap-year
+
+"""
+# Python program to check if year is a leap year or not
+year = int(input("Enter a year:  "))
+
+if (year % 4) == 0:
+	if (year % 100) == 0:
+		if(year % 400) == 0:
+			print("{0} is a leap year".format(year))
+		else:
+			print("{0} is not a leap year".format(year))
+	else:
+		print("{0} is not a leap year".format(year))
+else:
+	print("{0} is not a leap year".format(year))
+"""
