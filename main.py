@@ -723,3 +723,89 @@ if (year % 4) == 0:
 else:
 	print("{0} is not a leap year".format(year))
 """
+
+#  https://www.programiz.com/python-programming/examples/largest-number-three
+"""
+# Python program to find the largest number among the three input numbers
+
+num1 = float(input("Enter first number:  "))
+num2 = float(input("Enter second number:  "))
+num3 = float(input("Enter third number:  "))
+
+if (num1 >= num2) and (num1 >= num3):
+	largest = num1
+elif (num2 >= num1) and (num2 >= num3):
+	largest = num2
+else:
+	largest = num3
+
+print("The largest number is", largest)
+"""
+
+#  https://www.programiz.com/python-programming/examples/prime-number
+"""
+# Program to check if a number is prime or not
+
+#  Example 1: Using a flag variable
+
+num = int(input("Enter a number: "))
+
+# define a flag variable
+flag = False
+
+# prime numbers are greter than 1
+if num > 1:
+	#  check for factors
+	for i in range (2, num):
+		if (num % i) == 0:
+			#  if factor is found, set flag to True
+			flag = True
+			#  break out of loop
+			break
+
+#  check if flag is True
+if flag:
+	print(num,  "is not a prime number")
+else:
+	print(num,  "is a prime number")
+"""
+
+"""
+#  Example 2: Using a for...else statement
+num = int(input("Enter a number:  "))
+
+# prime numbers are greater than 1
+if num > 1:
+	#  check for factors
+	for i in range(2, num):
+		if (num % i) == 0:
+			print(num, "is not a prime number")
+			print(i, "times", num//i, "is", num)
+			break
+	else:
+		print(num, "is a prime numbe")
+
+# if input number is less than
+# or equal to 1, it is not prime
+else:
+	print(num, "is not a prime number")
+"""
+
+#  https://www.programiz.com/python-programming/examples/prime-number-intervals
+"""
+# Python program to display all the prime numbers within an interval
+
+lower = int(input("Enter the lower number:  "))
+upper = int(input("Enter the upper number:  "))
+
+print ("Prime numbers between", lower, "and", upper, "are:")
+
+for num in range(lower, upper + 1):
+	# all prime numbers are greter than 1
+	if num > 1:
+		for i in range (2, num):
+			if (num % i) == 0:
+				break
+		else:
+			print(num)
+"""
