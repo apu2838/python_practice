@@ -809,3 +809,60 @@ for num in range(lower, upper + 1):
 		else:
 			print(num)
 """
+
+# Chapter Comprehension
+
+"""
+#  List comprehension
+my_list = [i**2 for i in range(20) if i %2 == 0]
+print(my_list)
+"""
+"""
+#  Set comprehension
+a_list = ['Maaten', 'Khan', 'Maksudur', 'a', 'b', 'c']
+my_set = {i for i in a_list if len(i) > 1}
+print(my_set)
+"""
+"""
+#  Dictionary comprehension
+a_list = ['name', 'country', 'career']
+b_list = ['Maateen', 'Bangladesh', 'GP']
+my_dict = {i : j for i, j in zip(a_list, b_list)}  # zip function was used to etarate two list in parallel
+print(my_dict)
+"""
+"""
+#  Zip function, takes multiple parameter but returns 1 eterator tuple
+a = [i for i in range(11)]
+b = [i for i in range(11,21)]
+c = zip(a, b)
+print(c)
+print(list(c))
+"""
+"""
+my_dict = {'career': 'GP', 'country': 'Bangladesh', 'name': 'Maateen'}
+print(my_dict)
+new_dict = {key:value for value, key in my_dict.items()}
+print(new_dict)
+"""
+
+#  https://www.programiz.com/python-programming/dictionary-comprehension
+#  dictionary = {key: value for vars in iterable}
+"""
+# Example-1: Dictionary Comprehension
+square_dict = {num: num*num for num in range(1, 11)}
+print(square_dict)
+"""
+"""
+# Example-3: How to use Dictionary Comprehension
+#item price in dollars
+old_price = {'milk': 1.02, 'coffee': 2.5}
+
+dollar_to_pound = 0.76
+new_price = {item: value*dollar_to_pound for (item, value) in old_price.items()}
+print(new_price)
+"""
+# Example-4: If Conditional Dictionary Comprehension
+original_dict = {'jack': 38, 'michael': 48, 'guido': 57, 'john': 33}
+print(original_dict)
+even_dict = {k: v for (k, v) in original_dict.items() if v % 2 == 0}
+print(even_dict)
